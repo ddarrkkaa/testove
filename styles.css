@@ -1,0 +1,228 @@
+:root {
+    --colour-page: #f2efdb;
+    --colour-text: #36384F;
+    --colour-full-green: rgba(111, 169, 145, 1);
+    --colour-transparent-green: rgba(111, 169, 145, 0.4);
+    --colour-gray: #a8a4a1;
+    --colour-light-yellow: #F2DEBA;
+    --colour-light-orange: #F2DEBA;
+
+    --side-indent-bigger: 160px 120px;
+    --side-indent-smaller: 10px 100px;
+    --small-size: 20px;
+    --medium-size: 64px;  
+
+}
+
+body {
+    background-color: var(--colour-page);
+    font-family: "DM Sans", sans-serif;
+    color: var(--colour-text);
+}
+  
+.partner {
+    display: flex;
+    margin: var(--side-indent-smaller);
+    gap: 150px;
+}
+
+.partner h2 {
+    font-size: 52px;
+}
+
+.partner p {
+    font-size: var(--small-size);
+}
+
+.partner__logos {
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+}
+
+.allianz, .croix, .centuary, .destination, .tugo, .manulife {
+    height: 56px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.allianz {
+    width: 218px;
+    background-image: url('./svg/allianz.svg');
+}
+
+.croix {
+    width: 252px;
+    background-image: url('./svg/croix-bleue.svg');
+}
+
+.centuary {
+    width: 209px;
+    background-image: url('./svg/21century.svg');
+}
+
+.destination {
+    width: 238px;
+    background-image: url('./svg/destination.svg');
+}
+
+.tugo {
+    height: 72px;
+    width: 160px;
+    background-image: url('./svg/togo.svg');
+}
+
+.manulife {
+    height: 50px;
+    width: 260px;
+    background-image: url('./svg/Manulife.svg');
+}
+
+.partner__text {
+    width: 486px;
+}
+
+.advantages {
+    display: flex;
+    flex-direction: column;
+    margin: var(--side-indent-bigger);
+}
+
+.advantages h1{
+    font-size: var(--medium-size);
+}
+
+.advantages h3 {
+    font-size: 24px;
+}
+
+.advantages__wrapper {
+    display: grid;
+    grid-template-columns: 1.1fr 1.5fr 0.8fr;
+    grid-template-rows: 1fr 0.3fr 1fr;
+    gap: 24px;
+    grid-auto-rows: minmax(10px, auto);
+}
+
+.advantages__item {
+    background-color: var(--colour-transparent-green);
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.advantages__item-1 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.advantages__item-3, .advantages__item-4 {
+    grid-row-start: 2;
+    grid-row-end: 5;
+}
+
+.advantages__item-2 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    background-color: var(--colour-full-green);
+    padding-left: 61px;
+}
+
+.advantages__item-2__icon {
+    display: flex;
+    justify-content: space-between;
+}
+
+.advantages__item-2__icon p {
+    width: 550px;
+}
+.handshake {
+    height: 84px;
+    width: 84px;
+    background-image: url('./svg/handshake.svg');
+}
+
+.gray {
+    color: var(--colour-gray);
+}
+
+.achievement {
+    padding: 0 100px;
+    display: flex;
+}
+
+.achievement__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.achievement__item h1, .achievement__item h5 {
+    margin: 0;
+    padding: 0;
+}
+
+.achievement__item h1 {
+    margin-bottom: 20px; 
+    margin-top: 50px;
+    font-size: 72px;
+}
+
+.achievement__item h5 {
+    font-size: var(--small-size);
+}
+
+.swiper {
+    width: 600px;
+    height: 100%;
+}
+  
+.slide-content {
+    margin: 20px 46px;
+}
+
+.swiper-slide {
+    border-radius: 15px;
+}
+
+.swiper-slide:nth-child(odd) {
+    background-color: var(--colour-light-yellow);
+}
+.swiper-slide:nth-child(even) {
+    background-color: var(--colour-light-orange);
+}
+
+.raiting {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 50px;
+    gap: 5px;
+}
+
+.star {
+    width: 10px;
+    height: 10px;
+    background-image: url('./svg/star.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.slider-section {
+    margin: var(--side-indent-bigger);
+    display: flex;
+    flex-direction: column;
+}
+
+.aaa {
+    width: 300px;
+    padding-left: 700px; /*srach*/
+
+}
+
+.slider-section h1 {
+    font-size: var(--medium-size);
+}
