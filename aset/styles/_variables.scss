@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--roboto);
+  color: var(--black);
+}
+
+body {
+  background-color: var(--white);
+}
+
+a {
+  text-decoration: none;
+  font-family: var(--roboto);
+}
+
+.container {
+  max-width: 1350px;
+  margin: 0 auto;
+}
+
+.item_container {
+  max-width: 370px;
+}
